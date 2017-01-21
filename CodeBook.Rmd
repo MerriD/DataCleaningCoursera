@@ -1,0 +1,362 @@
+---
+title: "CodeBook"
+author: "Meredith Dart"
+date: "12 January 2017"
+output: html_document
+---0000
+
+
+Data Dictionary - Summarised UCI HAR dataset, calc_means.txt
+All features are the average by activity and subject for each of the listed measurements
+
+activity 18
+    activity description
+        
+subject 2
+    subject ID
+        1..30 Unique identifier per person performing the activity
+    
+tBodyAcc-mean()-X
+    time domain body acceleration signal mean X axis      
+        -1..1 Normalised bounded value
+    
+tBodyAcc-mean()-Y    
+    time domain body acceleration signal mean Y axis      
+        -1..1 Normalised bounded value
+    
+tBodyAcc-mean()-Z    
+    time domain body acceleration signal mean Z axis      
+        -1..1 Normalised bounded value
+    
+tBodyAcc-std()-X    
+    time domain body acceleration signal standard deviation X axis      
+        -1..1 Normalised bounded value
+    
+tBodyAcc-std()-Y    
+    time domain body acceleration signal standard deviation Y axis      
+        -1..1 Normalised bounded value
+    
+tBodyAcc-std()-Z    
+    time domain body acceleration signal standard deviation Z axis      
+        -1..1 Normalised bounded value
+    
+tGravityAcc-mean()-X    
+    time domain gravity acceleration signal mean X axis      
+        -1..1 Normalised bounded value
+    
+tGravityAcc-mean()-Y    
+    time domain gravity acceleration signal mean Y axis      
+        -1..1 Normalised bounded value
+    
+tGravityAcc-mean()-Z    
+    time domain gravity acceleration signal mean Z axis      
+        -1..1 Normalised bounded value
+    
+tGravityAcc-std()-X    
+    time domain gravity acceleration signal standard deviation X axis      
+        -1..1 Normalised bounded value
+    
+tGravityAcc-std()-Y    
+    time domain gravity acceleration signal standard deviation Y axis      
+        -1..1 Normalised bounded value
+    
+tGravityAcc-std()-Z    
+    time domain gravity acceleration signal standard deviation Z axis      
+        -1..1 Normalised bounded value
+    
+tBodyAccJerk-mean()-X    
+    time domain body acceleration jerk signal mean X axis      
+        -1..1 Normalised bounded value
+    
+tBodyAccJerk-mean()-Y    
+    time domain body acceleration jerk signal mean Y axis      
+        -1..1 Normalised bounded value
+    
+tBodyAccJerk-mean()-Z    
+    time domain body acceleration jerk signal mean Z axis      
+        -1..1 Normalised bounded value
+    
+tBodyAccJerk-std()-X    
+    time domain body acceleration jerk signal standard deviation X axis      
+        -1..1 Normalised bounded value
+    
+tBodyAccJerk-std()-Y    
+    time domain body acceleration jerk signal standard deviation Y axis      
+        -1..1 Normalised bounded value
+    
+tBodyAccJerk-std()-Z    
+    time domain body acceleration jerk signal standard deviation Z axis      
+        -1..1 Normalised bounded value
+    
+tBodyGyro-mean()-X    
+    time domain body gyroscope signal mean X axis      
+        -1..1 Normalised bounded value
+    
+tBodyGyro-mean()-Y    
+    time domain body gyroscope signal mean Y axis      
+        -1..1 Normalised bounded value
+    
+tBodyGyro-mean()-Z    
+    time domain body gyroscope signal mean Z axis      
+        -1..1 Normalised bounded value
+    
+tBodyGyro-std()-X    
+    time domain body gyroscope signal standard deviation X axis      
+        -1..1 Normalised bounded value
+    
+tBodyGyro-std()-Y    
+    time domain body gyroscope signal standard deviation Y axis      
+        -1..1 Normalised bounded value
+    
+tBodyGyro-std()-Z    
+    time domain body gyroscope signal standard deviation Z axis      
+        -1..1 Normalised bounded value
+    
+tBodyGyroJerk-mean()-X    
+    time domain body gyroscope jerk signal mean X axis      
+        -1..1 Normalised bounded value
+    
+tBodyGyroJerk-mean()-Y    
+    time domain body gyroscope jerk signal mean Y axis      
+        -1..1 Normalised bounded value
+    
+tBodyGyroJerk-mean()-Z    
+    time domain body gyroscope jerk signal mean Z axis      
+        -1..1 Normalised bounded value
+    
+tBodyGyroJerk-std()-X    
+    time domain body gyroscope jerk signal standard deviation X axis      
+        -1..1 Normalised bounded value
+    
+tBodyGyroJerk-std()-Y    
+    time domain body gyroscope jerk signal standard deviation Y axis      
+        -1..1 Normalised bounded value
+    
+tBodyGyroJerk-std()-Z    
+    time domain body gyroscope jerk signal standard deviation Z axis      
+        -1..1 Normalised bounded value
+    
+tBodyAccMag-mean()    
+    time domain body acceleration magnitude mean       
+        -1..1 Normalised bounded value
+    
+tBodyAccMag-std()    
+    time domain body acceleration magnitude standard deviation       
+        -1..1 Normalised bounded value
+    
+tGravityAccMag-mean()    
+    time domain gravity acceleration magnitude mean       
+        -1..1 Normalised bounded value
+    
+tGravityAccMag-std()    
+    time domain gravity acceleration magnitude standard deviation       
+        -1..1 Normalised bounded value
+    
+tBodyAccJerkMag-mean()    
+    time domain body acceleration jerk magnitude mean       
+        -1..1 Normalised bounded value
+    
+tBodyAccJerkMag-std()    
+    time domain body acceleration jerk magnitude standard deviation       
+        -1..1 Normalised bounded value
+    
+tBodyGyroMag-mean()    
+    time domain body gyroscope magnitude mean       
+        -1..1 Normalised bounded value
+    
+tBodyGyroMag-std()    
+    time domain body gyroscope magnitude standard deviation       
+        -1..1 Normalised bounded value
+    
+tBodyGyroJerkMag-mean()    
+    time domain body gyroscope jerk magnitude mean       
+        -1..1 Normalised bounded value
+    
+tBodyGyroJerkMag-std()    
+    time domain body gyroscope jerk magnitude standard deviation       
+        -1..1 Normalised bounded value
+    
+fBodyAcc-mean()-X    
+    frequency domain body acceleration signal mean X axis      
+        -1..1 Normalised bounded value
+    
+fBodyAcc-mean()-Y    
+    frequency domain body acceleration signal mean Y axis      
+        -1..1 Normalised bounded value
+    
+fBodyAcc-mean()-Z    
+    frequency domain body acceleration signal mean Z axis      
+        -1..1 Normalised bounded value
+    
+fBodyAcc-std()-X    
+    frequency domain body acceleration signal standard deviation X axis      
+        -1..1 Normalised bounded value
+    
+fBodyAcc-std()-Y    
+    frequency domain body acceleration signal standard deviation Y axis      
+        -1..1 Normalised bounded value
+    
+fBodyAcc-std()-Z    
+    frequency domain body acceleration signal standard deviation Z axis      
+        -1..1 Normalised bounded value
+    
+fBodyAcc-meanFreq()-X    
+    frequency domain body acceleration frequency mean X axis      
+        -1..1 Normalised bounded value
+    
+fBodyAcc-meanFreq()-Y    
+    frequency domain body acceleration frequency mean Y axis      
+        -1..1 Normalised bounded value
+    
+fBodyAcc-meanFreq()-Z    
+    frequency domain body acceleration frequency mean Z axis      
+        -1..1 Normalised bounded value
+    
+fBodyAccJerk-mean()-X    
+    frequency domain body acceleration jerk signal mean X axis      
+        -1..1 Normalised bounded value
+    
+fBodyAccJerk-mean()-Y    
+    frequency domain body acceleration jerk signal mean Y axis      
+        -1..1 Normalised bounded value
+    
+fBodyAccJerk-mean()-Z    
+    frequency domain body acceleration jerk signal mean Z axis      
+        -1..1 Normalised bounded value
+    
+fBodyAccJerk-std()-X    
+    frequency domain body acceleration jerk signal standard deviation X axis      
+        -1..1 Normalised bounded value
+    
+fBodyAccJerk-std()-Y    
+    frequency domain body acceleration jerk signal standard deviation Y axis      
+        -1..1 Normalised bounded value
+    
+fBodyAccJerk-std()-Z    
+    frequency domain body acceleration jerk signal standard deviation Z axis      
+        -1..1 Normalised bounded value
+    
+fBodyAccJerk-meanFreq()-X    
+    frequency domain body acceleration jerk frequency mean X axis      
+        -1..1 Normalised bounded value
+    
+fBodyAccJerk-meanFreq()-Y    
+    frequency domain body acceleration jerk frequency mean Y axis      
+        -1..1 Normalised bounded value
+    
+fBodyAccJerk-meanFreq()-Z    
+    frequency domain body acceleration jerk frequency mean Z axis      
+        -1..1 Normalised bounded value
+    
+fBodyGyro-mean()-X    
+    frequency domain body gyroscope signal mean X axis      
+        -1..1 Normalised bounded value
+    
+fBodyGyro-mean()-Y    
+    frequency domain body gyroscope signal mean Y axis      
+        -1..1 Normalised bounded value
+    
+fBodyGyro-mean()-Z    
+    frequency domain body gyroscope signal mean Z axis      
+        -1..1 Normalised bounded value
+    
+fBodyGyro-std()-X    
+    frequency domain body gyroscope signal standard deviation X axis      
+        -1..1 Normalised bounded value
+    
+fBodyGyro-std()-Y    
+    frequency domain body gyroscope signal standard deviation Y axis      
+        -1..1 Normalised bounded value
+    
+fBodyGyro-std()-Z    
+    frequency domain body gyroscope signal standard deviation Z axis      
+        -1..1 Normalised bounded value
+    
+fBodyGyro-meanFreq()-X    
+    frequency domain body gyroscope frequency mean X axis      
+        -1..1 Normalised bounded value
+    
+fBodyGyro-meanFreq()-Y    
+    frequency domain body gyroscope frequency mean Y axis      
+        -1..1 Normalised bounded value
+    
+fBodyGyro-meanFreq()-Z    
+    frequency domain body gyroscope frequency mean Z axis      
+        -1..1 Normalised bounded value
+    
+fBodyAccMag-mean()    
+    frequency domain body acceleration magnitude mean       
+        -1..1 Normalised bounded value
+    
+fBodyAccMag-std()    
+    frequency domain body acceleration magnitude standard deviation       
+        -1..1 Normalised bounded value
+    
+fBodyAccMag-meanFreq()    
+    frequency domain body acceleration magnitude frequency mean       
+        -1..1 Normalised bounded value
+    
+fBodyBodyAccJerkMag-mean()    
+    frequency domain body acceleration jerk magnitude mean       
+        -1..1 Normalised bounded value
+    
+fBodyBodyAccJerkMag-std()    
+    frequency domain body acceleration jerk magnitude standard deviation       
+        -1..1 Normalised bounded value
+    
+fBodyBodyAccJerkMag-meanFreq()    
+    frequency domain body acceleration jerk magnitude frequency mean       
+        -1..1 Normalised bounded value
+    
+fBodyBodyGyroMag-mean()    
+    frequency domain body gyroscope magnitude mean       
+        -1..1 Normalised bounded value
+    
+fBodyBodyGyroMag-std()    
+    frequency domain body gyroscope magnitude standard deviation       
+        -1..1 Normalised bounded value
+    
+fBodyBodyGyroMag-meanFreq()    
+    frequency domain body gyroscope magnitude frequency mean       
+        -1..1 Normalised bounded value
+    
+fBodyBodyGyroJerkMag-mean()    
+    frequency domain body gyroscope jerk magnitude mean       
+        -1..1 Normalised bounded value
+    
+fBodyBodyGyroJerkMag-std()    
+    frequency domain body gyroscope jerk magnitude standard deviation       
+        -1..1 Normalised bounded value
+    
+fBodyBodyGyroJerkMag-meanFreq()    
+    frequency domain body gyroscope jerk magnitude frequency mean       
+        -1..1 Normalised bounded value
+    
+angle(tBodyAccMean,gravity)    
+    window sample angle mean between mean body acceleration vector and gravity acceleration vector   
+        -1..1 Normalised bounded value
+    
+angle(tBodyAccJerkMean),gravityMean)    
+    window sample angle mean between mean body acceleration jerk vector and mean gravity acceleration vector   
+        -1..1 Normalised bounded value
+    
+angle(tBodyGyroMean,gravityMean)    
+    window sample angle mean between mean body gyroscope vector and mean gravity acceleration vector   
+        -1..1 Normalised bounded value
+    
+angle(tBodyGyroJerkMean,gravityMean)    
+    window sample angle mean between mean body gyroscope jerk vector and mean gravity acceleration vector   
+        -1..1 Normalised bounded value
+    
+angle(X,gravityMean)    
+    window sample angle mean between X axis vector and mean gravity acceleration vector 
+        -1..1 Normalised bounded value
+    
+angle(Y,gravityMean)    
+    window sample angle mean between Y axis vector and mean gravity acceleration vector 
+        -1..1 Normalised bounded value
+    
+angle(Z,gravityMean)    
+    window sample angle mean between Z axis vector and mean gravity acceleration vector 
+        -1..1 Normalised bounded value
+    
