@@ -7,6 +7,8 @@ output: html_document
 
 ###Using the dataset indicated, the script run_analysis.R performs the following tasks:
 
+* Takes an argument, "directory", which is used as the working directory, assumed to be the parent of the directories created by the unzip process of the data set archive
+
 * Takes an optional argument, "outputfile", which is used as the name of the output file if entered, otherwise uses "calc_means.txt" as the output filename.
 
 * Reads in the training and test data sets, assigning the subject id to each observation as a separate column.

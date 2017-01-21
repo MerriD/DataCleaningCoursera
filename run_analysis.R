@@ -1,29 +1,22 @@
-run_analysis <- function (outputfile) {
+run_analysis <- function (directory, outputfile) {
 
-    ## This function assumes the http://www.ibm.com/design/thinking/keys/hills/optional passed in outputfile will be used for the output filename, 
+    ## This function assumes the directory passed in will be used as the working directory,
+    ## and is the parent of the top level directory created by the unzip process from the data set archive
+    ## The optional passed in outputfile will be used for the output filename, 
     ## set to "calc_means" if not provided, and placed in the working directory
-    
+
     ## load libraries
     
     library(reshape2)
     
+    ## set the working directory
+    
+    try( if (!dir.exists(paths = directory)) stop ("Directory not found"))
+    setwd(directory)
+
     ## set the output filename
     
-    if (!exists(outputfile)) {
-        outfile <- "calc_means.txt"
-        } else {
-            outfile <- outputfile
-                }
-
-    ## download and unzip files
-    
-    tempzip <- tempfile()
-    download.file('https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip', tempzip)
-    unzip(tempzip)
-    
-    ## remove temporary file
-    
-    unlink(tempzip)
+    ifelse ( missing(outputfile), outfile <- "calc_means", outfile <- outputfile ) 
     
     ## subject_xxx is the person performing the activity
     ## y_xxx is the activity ID for the observation row
